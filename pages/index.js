@@ -3,12 +3,14 @@ import dynamic from "next/dynamic";
 
 const Layout = dynamic(() => import("../components/Layout"));
 const Landing = dynamic(() => import("../components/homeComponents/Landing"));
+const HomeServices =  dynamic(() => import("../components/homeComponents/HomeServices"))
 
 export default function Home() {
     return (
         <div>
             <Layout>
                 <Landing />
+                <HomeServices />
             </Layout>
         </div>
     );

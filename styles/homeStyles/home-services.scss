@@ -1,0 +1,30 @@
+@import "../colors.scss";
+@import "../fonts.scss";
+
+.home-services-container {
+    width: 100%;
+    height: 400px;
+}
+
+.home-service-title {
+    padding-top: 32px;
+    text-align: center;
+}
+
+.home-service-title--styles {
+    font-family: $fontheader;
+    font-size: 32px;
+    color: $primary500;
+}
+
+.service-cards-center {
+    padding-top: 32px;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.service-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(3, auto);
+}

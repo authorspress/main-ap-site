@@ -1,0 +1,53 @@
+@import "../shadows.scss";
+@import "../fonts.scss";
+@import "../colors.scss";
+
+.home-service-card-container {
+    margin-top: 24px;
+    background: $primary300;
+    border-radius: 12px;
+}
+
+.home-service-card-title-container {
+    align-items: center;
+    padding: 20px 42px 0px 42px;
+}
+
+.home-service-icon--styles {
+    color: $primary400;
+}
+
+.home-service-card-title {
+    padding-top:  8px;
+}
+
+.home-service-card-title--styles {
+    font-family: $fontheader;
+    font-size: 24px;
+    color: $primary600;
+}
+
+.summary {
+    padding: 20px 42px 0px 42px;
+}
+
+.summary--styles {
+    font-family: $fontmain;
+    font-size: 16px;
+    color: $primary400;
+}
+
+.home-service-btn  {
+    margin: 32px 42px 20px 42px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.home-service-btn--styles {
+    font-family: $fontmain;
+    font-size: 18px;
+    background: $primary500;
+    color: $primary200;
+    border: none;
+    border-radius: 8px;
+}
