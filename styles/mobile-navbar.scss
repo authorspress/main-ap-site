@@ -21,9 +21,6 @@
     border-radius: 0 0 8px 8px;
     height: 0px;
     overflow: hidden;
-    @include media("<=phone"){
-        width: 108.2%;
-    }
 }
 
 .mobile-navbar {

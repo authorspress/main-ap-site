@@ -12,13 +12,16 @@ $content-bg: black;
 
 .bg-container {
     position: absolute;
-    width: 350px;
+    width: 84.5%;
     padding-top: 20px;
     margin-left: 32px;
     margin-right: 32px;
 
     @include media('>=tablet') {
         display: none;
+    }
+    @include media("<=phone") {
+        width: 108.2%;
     }
 }
 
