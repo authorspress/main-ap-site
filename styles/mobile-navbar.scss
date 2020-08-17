@@ -1,0 +1,58 @@
+@import "../styles/colors.scss";
+@import "../styles/fonts.scss";
+@import "../styles/breakpoints.scss";
+
+.hide {
+    display: none;
+}
+
+.reveal {
+    animation: reveal 300ms ease-in forwards;
+}
+
+.unreveal {
+    animation: unreveal 300ms ease-in forwards;
+}
+
+.mobile-navbar-container {
+    background-color: $neutral200;
+    margin-top: -4px;
+    left: 32px;
+    border-radius: 0 0 8px 8px;
+    height: 0px;
+    overflow: hidden;
+    @include media("<=phone"){
+        width: 108.2%;
+    }
+}
+
+.mobile-navbar {
+    display: grid;
+}
+
+.nav-link {
+    text-align: center;
+    padding: 12px;
+}
+
+.nav-link--styles {
+    text-decoration: none;
+    font-family: $fontmain;
+    font-weight: 500;
+    color: $primary500;
+}
+
+@keyframes reveal {
+    from {height: 0px;}
+    to {height: 160px;}
+}
+
+@keyframes unreveal {
+    from {
+        height: 160px;
+    }
+
+    to {
+        height: 0px;
+    }
+}
