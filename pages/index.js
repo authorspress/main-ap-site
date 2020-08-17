@@ -3,7 +3,8 @@ import dynamic from "next/dynamic";
 
 const Layout = dynamic(() => import("../components/Layout"));
 const Landing = dynamic(() => import("../components/homeComponents/Landing"));
-const HomeServices =  dynamic(() => import("../components/homeComponents/HomeServices"))
+const HomeServices =  dynamic(() => import("../components/homeComponents/HomeServices"));
+const FreeSection = dynamic(() => import("../components/homeComponents/FreeSection"));
 
 export default function Home() {
     return (
@@ -11,6 +12,7 @@ export default function Home() {
             <Layout>
                 <Landing />
                 <HomeServices />
+                <FreeSection />
             </Layout>
         </div>
     );

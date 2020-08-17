@@ -13,8 +13,14 @@
     padding: 20px 42px 0px 42px;
 }
 
+.icon-container {
+    border-radius: 35px;
+    background-color: #B3BAFF;
+    display: inline-block;
+}
 .home-service-icon--styles {
     color: $primary400;
+    padding: 16px;
 }
 
 .home-service-card-title {
