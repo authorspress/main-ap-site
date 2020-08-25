@@ -4,7 +4,7 @@
 
 .home-service-card-container {
     margin-top: 24px;
-    background: $primary300;
+    background: $neutral200;
     border-radius: 12px;
 }
 
@@ -31,6 +31,18 @@
     font-family: $fontheader;
     font-size: 24px;
     color: $primary600;
+}
+
+.quote {
+ text-align: center;
+ padding: 12px 46px 0px 46px;
+}
+
+.quote--styles {
+    font-family: $fontmain;
+    font-style: italic;
+    font-size: 16px;
+    color: #6666FF;
 }
 
 .summary {

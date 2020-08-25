@@ -33,7 +33,7 @@ export default function Burger(props) {
 
     return (
         <div className="bg-container">
-            <div id="home" className={`${burgerState.removeBorder} bg-nav`}>
+            <div id="home" className={`${burgerState.removeBorder} ${props.bgcolor} bg-nav`}>
                 <div className="logo-container">
                     <img
                         className="ap-logo"

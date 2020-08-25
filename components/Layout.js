@@ -6,10 +6,10 @@ import "../styles/layout.scss";
 
 const Meta = dynamic(() => import("./Meta"));
 
-export default function Layout({ preview, children }) {
+export default function Layout({ preview, children, title}) {
     return (
         <>
-            <Meta />
+            <Meta title= {title} />
             <div className="page-wrapper">
                 <main>{children}</main>
             </div>

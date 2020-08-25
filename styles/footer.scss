@@ -1,0 +1,74 @@
+@import "./fonts.scss";
+@import "./colors.scss";
+@import "./breakpoints.scss";
+
+footer {
+    width: 100%;
+    height: 800px;
+    background-color: $primary600;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 350px);
+    grid-template-rows: repeat(2, 250px);
+    padding: 24px 32px 0px 32px; 
+    border: 2px solid white;
+}
+.contact-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+}
+
+.contacts-icon--styles {
+    color: $primary350;
+    padding-right: 8px;
+}
+
+.contact--styles {
+    font-family: $fontmain;
+    color: white;
+}
+
+.socials-title--styles {
+    font-family: $fontmain;
+    font-size: 24px;
+    color: white;
+}
+
+.socials-flex {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.social {
+    color: $primary350;
+    padding-right: 12px;
+}
+
+.payments {
+    margin-top: 24px;
+}
+
+.payments-title {
+    margin-bottom: 12px;
+}
+
+.payments-title--styles {
+    font-family: $fontmain;
+    font-size: 24px;
+    color: white;
+}
+
+.payment {
+    color: $primary350;
+    padding-right: 12px;
+}
+
+.payments-flex {
+    padding-bottom: 16px;
+    border-bottom: 2px solid $primary350;
+}
