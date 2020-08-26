@@ -11,10 +11,12 @@ footer {
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(1, 350px);
-    grid-template-rows: repeat(2, 2tto50px);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 64px;
     padding: 24px 32px 0px 32px; 
-    border: 2px solid white;
+    //border: 2px solid white;
 }
+
 .contact-container {
     display: flex;
     align-items: center;
@@ -81,4 +83,30 @@ footer {
     color: white;
     font-family: $fontmain;
     line-height: 1.4;
+}
+
+.copyright-container {
+    margin-top: 16px;
+}
+
+.copyright-txt {
+    text-align: center;
+}
+
+.copyright-txt--styles {
+    font-family: $fontmain;
+    color: white;
+}
+
+.bottom-links {
+    margin: 32px 32px 0px 32px;
+    display: grid;
+    grid-gap: 16px;
+}
+
+.bottom-link--styles {
+    text-align: center;
+    font-family: $fontmain;
+    color: white;
+    text-decoration: none;
 }

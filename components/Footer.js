@@ -105,6 +105,17 @@ export default function Footer(props) {
                     </div>
                 </section>
             </main>
+            <section className="copyright-container">
+                <h3 className="copyright-txt copyright-txt--styles">
+                    Copyright 2020 | Authors Press
+                </h3>
+                <nav className="bottom-links">
+                    <a href="" className="bottom-link bottom-link--styles">Testimonials</a>
+                    <a href="" className="bottom-link bottom-link--styles">Terms And Conditions</a>
+                    <a href="" className="bottom-link bottom-link--styles">Refund Policy</a>
+                    <a href="" className="bottom-link bottom-link--styles">Privacy Policy</a>
+                </nav>
+            </section>
         </footer>
     )
 }
