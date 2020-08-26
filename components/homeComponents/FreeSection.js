@@ -19,10 +19,26 @@ export default function FreeSection(props) {
                     </div>
                 </section>
                 <section className="registration-grid">
+                    <div className="free-txt-container dp-free-txt-container">
+                        <h1 className="free-title free-title--styles">
+                            FREE
+                            REGISTRATION
+                        </h1>
+                        <p className="free-summary free-summary--styles">
+                            Free Registration. Get your Free Book Exhibit and Free Book Signing on upcoming International Events. This is open to the First 10 Authors.
+                        </p>
+                        <motion.button
+                            className="free-btn free-btn--styles"
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        >
+                            Request Now!
+                        </motion.button>
+                    </div>
                     <div className="free-img-container">
                         <img src="/registration.png" alt="register image" className="registration-img"/>
                     </div>
-                    <div className="free-txt-container">
+                    <div className="free-txt-container reg-free-txt-container">
                         <h1 className="free-title free-title--styles">
                             FREE
                             REGISTRATION​

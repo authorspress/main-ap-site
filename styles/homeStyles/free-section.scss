@@ -3,10 +3,21 @@
 @import "../breakpoints.scss";
 
 .free-section-container {
+    margin-top: 900px;
+    @include media(">=tablet"){
     margin-top: 400px;
+    }
     //width: 100%;
     height: 900px;
     background:$primary300;
+    @include media(">=tablet") {
+        height: 856px;
+        display: flex;
+        justify-content: center;
+    }
+    @include media(">=desktop") {
+        height: 1256px;
+    }
 }
 
 .free-section-grid {
@@ -14,6 +25,38 @@
     grid-template-columns: repeat(1, 350px);
     margin-left: 32px;
     margin-right: 32px;
+    @include media(">=tablet") {
+        margin-left: 56px;
+        margin-right: 56px;
+        grid-template-columns: repeat(1, 956px);
+        grid-template-rows: repeat(2, 356px);
+    }
+    @include media(">=desktop") {
+        margin-left: 556px;
+        margin-right: 556px;
+        grid-template-columns: repeat(1, 1456px);
+    }
+}
+
+.assistance-grid {
+    @include media(">=tablet") {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.dp-free-txt-container {
+    display: none;
+    @include media(">=tablet") {
+        display: inline-block;
+    }
+}
+
+.registration-grid {
+    @include media(">=tablet") {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .img-container {
@@ -28,23 +71,60 @@
 
 .assistance-img {
     width: 250px;
-}
+    @include media(">=tablet") {
+        width: 356px;
+    }
+    @include media(">=desktop") {
+        width: 556px;
+    }
+ }
 
 .registration-img {
     width: 250px;
+    @include media(">=tablet") {
+        width: 356px;
+    }
+    @include media(">=desktop") {
+        width: 556px;
+    }
 }
 
 .free-txt-container {
     margin: 0px 32px 0px 32px;
+    @include media(">=tablet") {
+        margin: 96px 32px 0px 32px;
+    }
+    @include media(">=desktop") {
+        margin: 124px 32px 0px 32px;
+    }
+    @include media(">=LGdesktop") {
+        margin: 112px 32px 0px 32px;
+    }
+}
+
+.reg-free-txt-container {
+    @include media(">=tablet") {
+        display: none;
+    }
 }
 
 .free-title {
     padding-bottom: 12px;
 }
+
 .free-title--styles {
     font-family: $fontheader;
     font-size: 20px;
     color: $primary500;
+    @include media(">=tablet") {
+        font-size: 42px;
+    }
+    @include media(">=desktop") {
+        font-size: 52px;
+    }
+    @include media(">=LGdesktop") {
+        font-size: 64px;
+    }
 }
 
 .free-summary--styles {
@@ -53,6 +133,15 @@
     font-size: 12px;
     line-height: 1.4;
     color: $primary400;
+    @include media(">=tablet") {
+        font-size: 18px;
+    }
+    @include media(">=desktop") {
+        font-size: 20px;
+    }
+    @include media(">=LGdesktop") {
+        font-size: 24px;
+    }
 }
 
 .free-btn {
@@ -66,4 +155,17 @@
     border: none;
     background-color: $primary500;
     color:white;
+    @include media(">=tablet") {
+        margin-left: 250px;
+        font-size: 20px;
+    }
+    @include media(">=desktop") {
+        margin-left: 420px;
+        font-size: 24px;
+    }
+    @include media(">=LGdesktop") {
+        font-size: 32px;
+        margin-left: 420px;
+    }
 }
+
