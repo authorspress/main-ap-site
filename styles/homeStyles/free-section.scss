@@ -28,7 +28,7 @@
     @include media(">=tablet") {
         margin-left: 56px;
         margin-right: 56px;
-        grid-template-columns: repeat(1, 956px);
+        grid-template-columns: repeat(1, 756px);
         grid-template-rows: repeat(2, 356px);
     }
     @include media(">=desktop") {
@@ -156,7 +156,7 @@
     background-color: $primary500;
     color:white;
     @include media(">=tablet") {
-        margin-left: 250px;
+        margin-left: 150px;
         font-size: 20px;
     }
     @include media(">=desktop") {

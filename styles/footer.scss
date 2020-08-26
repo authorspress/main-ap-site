@@ -6,6 +6,9 @@ footer {
     width: 100%;
     height: 800px;
     background-color: $primary600;
+    @include media(">=tablet") {
+        height: 400px;
+    }
 }
 
 .footer-grid {
@@ -15,6 +18,27 @@ footer {
     grid-gap: 64px;
     padding: 24px 32px 0px 32px; 
     //border: 2px solid white;
+    @include media(">=tablet") {
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: repeat(1, auto);
+        grid-gap: 64px;
+    }
+    @include media(">=desktop") {
+        grid-template-columns: repeat(2, 550px);
+        grid-template-rows: repeat(1, auto);
+        grid-gap: 64px;
+    }
+}
+
+.footer-flex {
+    @include media(">=tablet") {
+        display: flex;
+        justify-content: center;
+    }
+    @include media(">=desktop") {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .contact-container {
@@ -86,7 +110,16 @@ footer {
 }
 
 .copyright-container {
-    margin-top: 16px;
+    margin-top: 32px;
+    @include media(">=tablet") {
+        margin: 32px 32px 4px 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    @include media(">=tablet") {
+        margin: 32px 156px 4px 156px;
+    }
 }
 
 .copyright-txt {
@@ -102,6 +135,11 @@ footer {
     margin: 32px 32px 0px 32px;
     display: grid;
     grid-gap: 16px;
+    @include media(">=tablet") {
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .bottom-link--styles {
