@@ -11,7 +11,7 @@ footer {
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(1, 350px);
-    grid-template-rows: repeat(2, 250px);
+    grid-template-rows: repeat(2, 2tto50px);
     padding: 24px 32px 0px 32px; 
     border: 2px solid white;
 }
@@ -71,4 +71,14 @@ footer {
 .payments-flex {
     padding-bottom: 16px;
     border-bottom: 2px solid $primary350;
+}
+
+.footer-summary {
+    padding-top: 16px;
+}
+
+.footer-summary--styles {
+    color: white;
+    font-family: $fontmain;
+    line-height: 1.4;
 }

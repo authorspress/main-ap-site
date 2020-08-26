@@ -1,5 +1,6 @@
 @import "../colors.scss";
 @import "../fonts.scss";
+@import "../breakpoints.scss";
 
 .home-services-container {
     width: 100%;
@@ -15,16 +16,45 @@
     font-family: $fontheader;
     font-size: 32px;
     color: $primary500;
+    @include media(">=desktop") {
+        font-size: 46px;
+    }
 }
 
 .service-cards-center {
     padding-top: 32px;
     padding-left: 64px;
     padding-right: 64px;
+    @include media(">=desktop") {
+        padding-left: 96px;
+        padding-right: 96px;
+    }
+
+    @include media(">=desktop") {
+        padding-left: 256px;
+        padding-right: 256px;
+    }
+    @include media(">=desktop") {
+        display: flex;
+        justify-content: center;
+
+    }
 }
 
 .service-cards-grid {
     display: grid;
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(3, auto);
+    align-items: center;
+    @include media(">=tablet") {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, auto);
+        grid-gap: 16px;
+    }
+
+    @include media(">=desktop") {
+        grid-template-columns: repeat(3, 400px);
+        grid-template-rows: repeat(1, 600px);
+        grid-gap: 16px;
+    }
 }

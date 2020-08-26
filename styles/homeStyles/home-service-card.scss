@@ -1,6 +1,7 @@
 @import "../shadows.scss";
 @import "../fonts.scss";
 @import "../colors.scss";
+@import "../breakpoints.scss";
 
 .home-service-card-container {
     margin-top: 24px;
@@ -11,6 +12,7 @@
 .home-service-card-title-container {
     align-items: center;
     padding: 20px 42px 0px 42px;
+    
 }
 
 .icon-container {
@@ -31,6 +33,9 @@
     font-family: $fontheader;
     font-size: 24px;
     color: $primary600;
+    @include media(">=desktop") {
+        font-size: 32px;
+    }
 }
 
 .quote {
@@ -43,6 +48,9 @@
     font-style: italic;
     font-size: 16px;
     color: #6666FF;
+    @include media(">=desktop") {
+        font-size: 18px;
+    }
 }
 
 .summary {
@@ -53,12 +61,27 @@
     font-family: $fontmain;
     font-size: 16px;
     color: $primary400;
+    @include media(">=desktop") {
+        font-size: 20px;
+    }
 }
 
 .home-service-btn  {
     margin: 32px 42px 20px 42px;
     padding: 12px;
     cursor: pointer;
+}
+
+.btn1-margin {
+    @include media(">=tablet") {
+        margin-top: 96px;
+    }
+}
+
+.btn3-margin {
+    @include media(">=tablet") {
+        margin-top: 42px;
+    }
 }
 
 .home-service-btn--styles {

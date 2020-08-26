@@ -23,7 +23,7 @@ export default function ServiceListCard(props) {
                 {props.serviceSummary}
             </p>
             <motion.button
-                className="home-service-btn home-service-btn--styles"
+                className={`${props.btnClass} home-service-btn home-service-btn--styles`}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
             >

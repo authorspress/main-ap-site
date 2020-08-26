@@ -1,0 +1,59 @@
+@import "./breakpoints.scss";
+@import "./colors.scss";
+@import "./fonts.scss";
+
+.desktop-navbar-container {
+    display: none;
+    @include media(">=tablet"){
+        display: inline-block;
+        width: 100%;
+    }
+}
+.desktop-navbar {
+    @include media(">=tablet") {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 32px 32px 16px 32px;
+        padding: 12px;
+    }
+     @include media(">=LGdesktop") {
+         padding: 14px;
+        margin: 32px 356px 16px 356px;
+    }
+}
+
+.dp-logo {
+    width: 150px;
+     @include media(">=LGdesktop") {
+        width: 200px;
+    }
+}
+
+.desktop-navbar--styles {
+    background-color: white;
+    border-radius: 16px;
+}
+
+.dp-nav-link {
+    margin-right: 24px;
+}
+
+.dp-nav-link--styles {
+    text-decoration: none;
+    font-family: $fontheader;
+    color: $primary500;
+    padding-bottom: 4px;
+    transition: all 500ms;
+    border-bottom: 4px solid white;
+    @include media(">=LGdesktop") {
+        padding-bottom: 4px;
+        font-size: 20px;
+    }
+    
+}
+
+.dp-nav-link--styles:hover {
+    border-bottom: 4px solid $primary500;
+}
+

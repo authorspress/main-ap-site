@@ -4,6 +4,7 @@ import "../../styles/homeStyles/landing.scss";
 import { useState } from "react";
 
 const Burger = dynamic(() => import("../Burger"));
+const DesktopNavbar = dynamic(() => import("../DekstopNavbar"));
 
 export default function Landing(props) {
     const [burgerClicked, setBurgerClicked] = useState(false);
@@ -11,6 +12,7 @@ export default function Landing(props) {
     return (
         <div className="landing-container">
             <Burger />
+            <DesktopNavbar />
             <div className="hero-content-grid">
                 <div className="child1 hero-text">
                     <h1 className="hero-title hero-title--styles">

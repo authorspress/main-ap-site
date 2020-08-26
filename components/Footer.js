@@ -99,6 +99,9 @@ export default function Footer(props) {
                                 />
                             </div>
                         </section>
+                        <section className="footer-summary footer-summary--styles">
+                            Authors Press is an online self-publishing company and book reseller catering to the needs of both published and aspiring authors. Our services are centered on providing the best solutions for our clients. 
+                        </section>
                     </div>
                 </section>
             </main>
