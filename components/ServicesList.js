@@ -28,9 +28,6 @@ export default function ServicesList(props) {
 
     return (
         <div className="home-services-container">
-            <h2 className="home-service-title home-service-title--styles">
-                Our Services
-            </h2>
             <div className="service-cards-center">
                 <div className="service-cards-grid">
                     <ServiceListCard

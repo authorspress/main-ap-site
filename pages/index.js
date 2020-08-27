@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 
 const Layout = dynamic(() => import("../components/Layout"));
 const Landing = dynamic(() => import("../components/homeComponents/Landing"));
-const ServicesList =  dynamic(() => import("../components/ServicesList"));
+const ServicesList = dynamic(() => import("../components/ServicesList"));
 const FreeSection = dynamic(() => import("../components/homeComponents/FreeSection"));
 const Footer = dynamic(() => import("../components/Footer"));
 
@@ -13,6 +13,9 @@ export default function Home() {
         <div>
             <Layout title="Home | Authors Press">
                 <Landing />
+                <h2 className="home-service-title home-service-title--styles">
+                    Our Services
+                </h2>
                 <ServicesList />
                 <FreeSection />
                 <Footer />

@@ -13,4 +13,61 @@
 
 .header-title--styles {
     font-family: $fontheader;
+    font-size: 32px;
+    color: $primary500;
 }
+
+.header-summary {
+    text-align: center;
+    padding: 12px 32px 12px 32px;
+}
+
+.header-summary--styles {
+    font-family: $fontmain;
+    font-size: 12px;
+    color: $primary350;
+    line-height: 1.4;
+}
+
+.offered-services-title {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.offered-services-title--styles {
+    font-family: $fontheader;
+    font-size: 18px;
+    color: $primary500;
+}
+
+.programs-grid {
+    border: 2px solid red;
+    margin-top: 856px;
+}
+
+.program {
+    margin: 0px 32px 16px 32px;
+    border-top: 4px solid $primary500;
+    background-color: $neutral200;
+    padding: 0px 20px 20px 20px;
+}
+
+.program-title {
+    margin: 12px 0px 16px 0px;
+}
+
+.program-title--styles {
+    font-family: $fontheader;
+    font-size: 16px;
+    color: $primary500;
+}
+
+.program-summary--styles {
+    font-family: $fontmain;
+    font-size: 12px;
+    color: $primary350;
+}
+.phone-number--styles {
+    color: $complimentary500;
+}
+

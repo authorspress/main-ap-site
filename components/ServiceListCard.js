@@ -1,6 +1,6 @@
 import "../styles/service-card.scss";
 import { motion } from "framer-motion";
-import Link from "next/Link";
+import Link from "next/link";
 
 export default function ServiceListCard(props) {
     let hasQuote = <p className="quote quote--styles">
