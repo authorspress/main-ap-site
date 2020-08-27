@@ -3,8 +3,7 @@
 @import "../fonts.scss";
 
 .services-header {
-    margin-top: 124px;
-    border: 1px solid blue;
+    margin-top: 104px;
 }
 
 .header-title {
@@ -71,3 +70,10 @@
     color: $complimentary500;
 }
 
+.programs-img-container {
+    margin: 0px 12px 0px 12px;
+}
+.programs-img {
+    width: 362px;
+    margin-top: -64px;
+}

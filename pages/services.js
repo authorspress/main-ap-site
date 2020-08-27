@@ -67,7 +67,7 @@ export default function Services() {
                             </section>
                             <section className="program">
                                 <h2 className="program-title program-title--styles">
-                                    Bookstore availability program
+                                    Bookstore marketing program
                                 </h2>
                                 <p className="program-summary program-summary--styles">
                                     Our book marketing program is designed to help you get your book out there and convert to potential sales.
@@ -87,7 +87,11 @@ export default function Services() {
                                 </p>
                             </section>
                         </div>
-                        <div className="program-right-cell"></div>
+                        <div className="program-right-cell">
+                            <div className="programs-img-container">
+                                <img src="/program-img.png" alt="programs offered image" className="programs-img"/>
+                            </div>
+                        </div>
                     </section>
                 </main>
             </Layout>
