@@ -11,7 +11,7 @@ export default function MobileNavbar(props) {
     return (
         <div className={`${props.state} mobile-navbar-container`}>
             <div className="mobile-navbar">
-                <Link href="/Services">
+                <Link href="/services">
                     <a className={`nav-link nav-link--styles`}>Services</a>
                 </Link>
                 <Link href="/bookstore">

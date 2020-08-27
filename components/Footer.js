@@ -1,6 +1,8 @@
 import "../styles/footer.scss";
+import Link from 'next/link';
 import { faPhone, faMapMarkerAlt, faAt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {motion} from "framer-motion";
 
 export default function Footer(props) {
     return (
@@ -41,7 +43,9 @@ export default function Footer(props) {
                             </div>
                         </section>
                         <section className="bbb-img-container">
-                            <img src="/blueseal.png" alt="blue seal A+ rating" className="bbb-img" />
+                            <a href="https://www.bbb.org/us/ca/pittsburg/profile/publishers/authors-press-1116-896738/#sealclick">
+                                <img src="/blueseal.png" alt="blue seal A+ rating" className="bbb-img" />
+                            </a>
                         </section>
                     </section>
                     <section className="right-child">
@@ -112,11 +116,27 @@ export default function Footer(props) {
                     Copyright 2020 | Authors Press
                 </h3>
                 <nav className="bottom-links">
-                    <a href="" className="bottom-link bottom-link--styles">Testimonials</a>
-                    <a href="" className="bottom-link bottom-link--styles">Terms And Conditions</a>
-                    <a href="" className="bottom-link bottom-link--styles">Refund Policy</a>
-                    <a href="" className="bottom-link bottom-link--styles">Privacy Policy</a>
+                    <Link href="/">
+                        <a className="bottom-link bottom-link--styles">Testimonials</a>
+                    </Link>
+
+                    <Link href="/">
+                        <a href="" className="bottom-link bottom-link--styles">Terms And Conditions</a>
+                    </Link>
+
+                    <Link href="/">
+                        <a href="" className="bottom-link bottom-link--styles">Refund Policy</a>
+                    </Link>
+
+                    <Link href="/">
+                        <a href="" className="bottom-link bottom-link--styles">Privacy Policy</a>
+                    </Link>
                 </nav>
+            </section>
+            <section className="arists-credit-container artist-credit-container--styles">
+                <p className="artist-credit artist-credit--styles">
+                    Illustrations by <motion.a className="artist-link--styles" href="https://icons8.com/">Icons 8</motion.a> from <a className="artist-link--styles" href="https://icons8.com/">Icons8</a>
+                </p>
             </section>
         </footer>
     )

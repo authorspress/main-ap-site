@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import "../styles/burger.scss";
 
@@ -35,22 +35,26 @@ export default function Burger(props) {
         <div className="bg-container">
             <div id="home" className={`${burgerState.removeBorder} ${props.bgcolor} bg-nav`}>
                 <div className="logo-container">
-                    <img
-                        className="ap-logo"
-                        src="/ap-logo.png"
-                        alt="authors press logo"
-                    />
+                    <Link href="/">
+                        <a href="">
+                            <img
+                                className="ap-logo"
+                                src="/ap-logo.png"
+                                alt="authors press logo"
+                            />
+                        </a>
+                    </Link>
                 </div>
-                <div className="burger-container">
-                    <a
-                        onClick={clickHandler}
-                        className={`${burgerState.burgerOpen} navicon-button burger burger--styles x`}
-                    >
-                        <div className="navicon"></div>
-                    </a>
+                    <div className="burger-container">
+                        <a
+                            onClick={clickHandler}
+                            className={`${burgerState.burgerOpen} navicon-button burger burger--styles x`}
+                        >
+                            <div className="navicon"></div>
+                        </a>
+                    </div>
                 </div>
+                <MobileNavbar state={burgerState.revealMenu} />
             </div>
-            <MobileNavbar state={burgerState.revealMenu} />
-        </div>
     );
 }

@@ -1,0 +1,16 @@
+@import "../breakpoints.scss";
+@import "../colors.scss";
+@import "../fonts.scss";
+
+.services-header {
+    margin-top: 124px;
+    border: 1px solid blue;
+}
+
+.header-title {
+    text-align: center;
+}
+
+.header-title--styles {
+    font-family: $fontheader;
+}

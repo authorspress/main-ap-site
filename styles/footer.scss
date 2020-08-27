@@ -7,7 +7,7 @@ footer {
     height: 800px;
     background-color: $primary600;
     @include media(">=tablet") {
-        height: 400px;
+        height: 450px;
     }
 }
 
@@ -147,4 +147,27 @@ footer {
     font-family: $fontmain;
     color: white;
     text-decoration: none;
+}
+
+.artist-credit-container--styles {
+    color: white;
+}
+
+.artist-credit {
+    text-align: center;
+    margin-top: 16px;
+    @include media(">=tablet") {
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 156px;
+    }
+}
+
+.artist-credit--styles {
+    font-family: $fontmain;
+}
+
+.artist-link--styles {
+    text-decoration: none;
+    color: $complimentary300;
 }
