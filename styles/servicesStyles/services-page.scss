@@ -14,11 +14,17 @@
     font-family: $fontheader;
     font-size: 32px;
     color: $primary500;
+    @include media(">=tablet") {
+        font-size: 48px;
+    }
 }
 
 .header-summary {
     text-align: center;
     padding: 12px 32px 12px 32px;
+    @include media(">=tablet") {
+        padding: 12px 256px 12px 256px;
+    }
 }
 
 .header-summary--styles {
@@ -26,6 +32,9 @@
     font-size: 12px;
     color: $primary350;
     line-height: 1.4;
+    @include media(">=tablet") {
+        font-size: 16px;
+    }
 }
 
 .offered-services-title {
@@ -37,10 +46,24 @@
     font-family: $fontheader;
     font-size: 18px;
     color: $primary500;
+    @include media(">=tablet") {
+        font-size: 20px;
+    }
 }
 
 .programs-grid {
     margin-top: 856px;
+    @include media(">=tablet") {
+        margin-top: 132px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include media(">=desktop") {
+        margin-top: 256px;
+    }
+    @include media(">=LGdesktop") {
+        margin: 256px 656px 12px 656px;
+    }
 }
 
 .program {
@@ -58,21 +81,35 @@
     font-family: $fontheader;
     font-size: 16px;
     color: $primary500;
+    @include media(">=desktop") {
+        font-size: 20px;
+    }
 }
 
 .program-summary--styles {
     font-family: $fontmain;
     font-size: 12px;
     color: $primary350;
+     @include media(">=desktop") {
+        font-size: 16px;
+    }
 }
 .phone-number--styles {
     color: $complimentary500;
 }
 
 .programs-img-container {
-    margin: 0px 12px 0px 12px;
+    margin: 0px 12px 0px 4px;
 }
 .programs-img {
     width: 362px;
     margin-top: -64px;
+    @include media(">=tablet") {
+        width: 476px;
+        margin-top: 56px;
+    }
+    @include media(">=desktop") {
+        width: 676px;
+        margin-top: -32px;
+    }
 }

@@ -5,8 +5,9 @@ import { faWindowRestore } from "@fortawesome/free-solid-svg-icons";
 const Layout = dynamic(() => import("../components/Layout"));
 const Burger = dynamic(() => import("../components/Burger"));
 const MobileNavbar = dynamic(() => import("../components/MobileNavbar"));
+const DesktopNavbar = dynamic(() => import("../components/DekstopNavbar"));
 const ServiceList = dynamic(() => import("../components/ServicesList"));
-
+const Footer = dynamic(() => import("../components/Footer"));
 import "../styles/servicesStyles/services-page.scss";
 
 export default function Services() {
@@ -30,6 +31,7 @@ export default function Services() {
             <Layout title="Services | Authors Press">
                 <Burger />
                 <MobileNavbar bgcolor={burgerbgcolor} />
+                <DesktopNavbar />
                 <header className="services-header">
                     <h1 className="header-title header-title--styles">
                         Our Services
@@ -94,6 +96,7 @@ export default function Services() {
                         </div>
                     </section>
                 </main>
+                <Footer />
             </Layout>
         </>
     )
